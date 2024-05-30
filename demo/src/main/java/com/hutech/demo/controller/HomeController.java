@@ -1,7 +1,9 @@
 package com.hutech.demo.controller;
 
+import com.hutech.demo.services.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -18,7 +20,7 @@ public class HomeController {
     @GetMapping("")
     public String index(Model model)
     {
-        model.addAttribute("listcourse", courseService.GetAll());
+        model.addAttribute("listcourse", courseService.getAll());
         return "home";
     }
 }

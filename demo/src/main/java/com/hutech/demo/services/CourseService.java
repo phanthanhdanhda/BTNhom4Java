@@ -8,10 +8,10 @@ import java.util.List;
 
 @Service
 public class CourseService {
-    private List<Course> ListCourse = new ArrayList<>();
+    private List<Course> listCourse = new ArrayList<>();
     public void add(Course newProduct){ listCourse.add(newProduct); }
 
-    public List<Course> getListCourse() {
-        return ListCourse;
+    public List<Course> getAll() {
+        return listCourse;
     }
 }

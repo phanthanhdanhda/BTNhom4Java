@@ -1,6 +1,7 @@
 package com.hutech.demo.controller;
 
 import com.hutech.demo.model.Course;
+import com.hutech.demo.services.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
