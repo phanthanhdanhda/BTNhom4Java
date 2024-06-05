@@ -20,7 +20,7 @@ public class HomeController {
     @GetMapping("")
     public String index(Model model)
     {
-        model.addAttribute("listcourse", courseService.getAll());
+        model.addAttribute("listCourse", courseService.getAll());
         return "home";
     }
 }
