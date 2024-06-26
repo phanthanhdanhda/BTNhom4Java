@@ -17,10 +17,10 @@ public class HomeController {
     public String index() {
         return "home";
     }
-    @GetMapping("")
+    @GetMapping
     public String index(Model model)
     {
-        model.addAttribute("listCourse", courseService.getAll());
+        model.addAttribute("listCourse", courseService.getAllCourse());
         return "home";
     }
 }
